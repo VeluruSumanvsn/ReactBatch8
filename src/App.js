@@ -1,14 +1,15 @@
-import logo from './logo.svg';
+import React from "react";
+import Home from './Components/Home';
 import './App.css';
+import Dashboard from './Components/Dashboard'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        Hello
-      </header>
+const App = () =>{
+  return(
+    <div>
+        <Home />
+        <Dashboard />
     </div>
-  );
+   
+  )
 }
-
-export default App;
+export default App
