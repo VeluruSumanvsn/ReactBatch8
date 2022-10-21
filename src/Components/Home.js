@@ -9,7 +9,7 @@ function Home() {
         <img className="logo" src={Logo} alt="logo" />
       </div>
       <div>
-        <h1>Hello</h1>
+        <h1>Hello vdsbvjbdsknvoikjugdskngkhion zmjcvhsvbkc</h1>
       </div>
     </div>
   );
