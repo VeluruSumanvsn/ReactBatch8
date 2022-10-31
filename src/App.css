@@ -4,3 +4,9 @@
 .flipkart-logo{
     width: 100px;
 }
+.counter{
+    width: 500px;
+    border: 1px solid #111;
+    margin: 0 auto;
+    padding: 15px;
+}

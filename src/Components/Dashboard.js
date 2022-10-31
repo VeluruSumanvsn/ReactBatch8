@@ -1,10 +1,15 @@
 import React from "react";
+import First from "./First";
 
 class Dashboard extends React.Component {
+    state={
+        name: "Suman",
+        salary:123456
+    }
     render(){
         return(
             <div>
-                <h2>Hello This is class based Component</h2>
+               <First details={this.state.name}/>
             </div>
         )
     }
