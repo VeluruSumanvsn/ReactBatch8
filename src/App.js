@@ -9,8 +9,8 @@ import { Navbar } from "./Components/Navbar";
 const App = () =>{
   return(
     <div>
-        {/* <Header />
-        <Home /> */}
+        <Home />
+        <Header />
         <Dashboard />
         <Footer />
         <Navbar />
