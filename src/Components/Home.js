@@ -20,22 +20,22 @@ const Homepage = () =>{
     }
   return (
     <div>
-      <div class=" search-container bg-primary text-white"> 
-          <em><h3>Flipkart</h3></em> 
-          <em><span>Explore Plus</span></em> 
-          <input type="text" placeholder="Search.." name="search"/>
-          <button type="button" class="btn btn-secondary">Login </button>
-          <button type="button" class="btn btn-warning">Become a Seller </button>
+      <div class=" search-container bg-primary text-white d-flex flex-fill "> 
+          <em><h3 >Flipkart</h3></em> 
+          <em><span>Explore Plus</span></em>
+          <input  type="text" placeholder="Search.." name="search"/>
+          <button type="button" class="btn btn-secondary ">Login </button>
+          <button type="button" class="btn btn-warning ">Become a Seller </button>
           <button type="button" class="btn btn-info">More </button>
           <button type="button" class="btn btn-success">Cart </button>
       </div>
 
       <div class ="row" >
-          <div class = "col-sm-1" >
+          <div class = "col-sm-1 rounded" >
           <img className = "Top_Offers" src={Top_Offers1} alt = "Top_Offers" /> Top_Offers</div> 
-          <div class = "col-sm-1" >
+          <div class = "col-sm-1 rounded" >
           <img className = "Home" src={Home1} alt = "Home" />Home </div>
-          <div class = "col-sm-1" >
+          <div class = "col-sm-1 rounded" >
             <img className = "2-Wheelers" src={Wheelers2} alt = "Wheelers2" />2-Wheelers </div>
           <div class = "col-sm-1" >
             <img className = "Appliances" src={Appliances1} alt = "Appliances" /> Appliances</div>
