@@ -30,7 +30,6 @@ const Homepage = () =>{
           <button type="button" class="btn btn-success">Cart </button>
       </div>
 
- 
       <div class ="row" >
           <div class = "col-sm-1" >
           <img className = "Top_Offers" src={Top_Offers1} alt = "Top_Offers" /> Top_Offers</div> 
@@ -55,16 +54,15 @@ const Homepage = () =>{
       </div>
       <div className="counting">
             <span>{clicked}</span>
-            <button onClick={Multply}>  <div class = "col-sm-1" >
-            <img className = "Electronics" src={Electronics1} alt = "Electronics" /> Electronics</div></button>
-            <button onClick={Multply}> <div class = "col-sm-1" >
-            <img className = "Fashion" src={Fashion1} alt = "Fashion" /> Fashion</div></button>
-            <button onClick={Multply}> <div class = "col-sm-1" >
-            <img className = "Grocery" src={Grocery1} alt = "Grocery" /> Grocery</div></button>
-            <button onClick={Multply}> <div class = "col-sm-1" >
-            <img className = "Mobiles" src={Mobiles1} alt = "Mobiles" /> Mobiles</div> </button>
-            <button onClick={Multply}> <div class = "col-sm-1" >
-            <img className = "Travel" src={Travel1} alt = "Travel" /> Travel </div></button>
+            <button onClick={Multply}>
+              <img className = "Electronics" src={Electronics1} alt = "Electronics" /> Electronics</button>
+            <button onClick={Multply}>
+              <img className = "Fashion" src={Fashion1} alt = "Fashion" /> Fashion</button>
+            <button onClick={Multply}>
+              <img className = "Grocery" src={Grocery1} alt = "Grocery" /> Grocery</button>
+            <button onClick={Multply}>
+              <img className = "Mobiles" src={Mobiles1} alt = "Mobiles" /> Mobiles </button>
+            <button onClick={Multply}> <img className = "Travel" src={Travel1} alt = "Travel" /> Travel</button>
             
             <button onClick={devide}>-</button>
         </div>
