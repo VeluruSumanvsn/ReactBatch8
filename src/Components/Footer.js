@@ -4,7 +4,7 @@ import footer from './Footer'
 const Footer = () =>{
     return(
         <div>
-            <h2> Hello this is Guru's Component</h2>
+          <h2>hello</h2>
         </div>
     )
 }

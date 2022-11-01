@@ -15,8 +15,8 @@ const App = () =>{
         {/* <Dashboard /> */}
         <First />
         <Second />
-        {/* <Footer />
-        <Navbar /> */}
+        <Footer />
+        <Navbar /> 
     </div>
   );
 }
