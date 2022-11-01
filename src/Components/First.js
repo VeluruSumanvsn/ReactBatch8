@@ -22,7 +22,7 @@ class First extends React.Component {
     render(){
         return(
             <div className="counter">
-               <h2>example of counter by using setState</h2>
+               <h2>example of counter by using Class Based Component</h2>
                <h2>{this.state.value}</h2>
                <button onClick={this.Increment}>+</button>
                <button onClick={this.Decrement}>-</button>

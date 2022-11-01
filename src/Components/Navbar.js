@@ -5,7 +5,5 @@ export const Navbar = () => {
     <div className="navbar">
     <h2> Hello Surendra,This is Navbar Components</h2>
     </div>
-
-    
   )
 }
