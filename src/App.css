@@ -4,10 +4,6 @@
 .flipkart-logo{
     width: 100px;
 }
-
-.Top_Offers{
-    width: 100px;
-}
 .counter{
     width: 500px;
     border: 1px solid #111;
@@ -21,4 +17,10 @@
     margin: 0 auto;
     padding: 15px;
 
+}
+.counting{
+    width: 90px;
+    border: 1px solid #111;
+    margin: 0 auto;
+    padding: 1px;
 }

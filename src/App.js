@@ -1,5 +1,5 @@
 import React from "react";
-import Home from './Components/Home';
+import Homepage from './Components/Home';
 import './App.css';
 import Dashboard from './Components/Dashboard'
 import Header from "./Components/Header";
@@ -10,13 +10,13 @@ import First from "./Components/First";
 const App = () =>{
   return(
     <div>
-        {/* <Home />
-        <Header /> */}
-        {/* <Dashboard /> */}
+        <Homepage />
+        <Header />
+        <Dashboard />
         <First />
         <Second />
-        {/* <Footer />
-        <Navbar /> */}
+        <Footer />
+        <Navbar />
     </div>
   );
 }
