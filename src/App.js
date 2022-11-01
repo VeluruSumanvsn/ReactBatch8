@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import { Navbar } from "./Components/Navbar";
 import Second from "./Components/Second"
 import First from "./Components/First";
+import Guest from "./Components/Guest";
 const App = () =>{
   return(
     <div>
@@ -17,6 +18,7 @@ const App = () =>{
         <Second />
         <Footer />
         <Navbar />
+        <Guest/>
     </div>
   );
 }
