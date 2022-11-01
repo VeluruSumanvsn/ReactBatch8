@@ -11,29 +11,26 @@ import Mobiles1 from "../Images/Mobiles.webp";
 import Travel1 from "../Images/Travel.webp";
 
 const Homepage = () =>{
-    const[clicked, setClicked] = useState(1);
+    const[clicked, setClicked] = useState(0);
     function Multply(){
-        setClicked(clicked * 2)
+        setClicked((clicked+1)*2)
     }
     function devide(){
-      setClicked(clicked / 2)
+      setClicked((clicked+1) / 2)
     }
   return (
     <div>
-       <div className="counting">
-          <h6>Top_Offers clicked</h6>
-            <span>{clicked}</span>
-            <button onClick={Multply}>+</button>
-            <button onClick={devide}>-</button>
-        </div>
-      <div class="topnav bg-primary text-white search-container btn-group"> 
+      <div class=" search-container bg-primary text-white"> 
           <em><h3>Flipkart</h3></em> 
           <em><span>Explore Plus</span></em> 
           <input type="text" placeholder="Search.." name="search"/>
-          <span> Become a Seller</span>
-          <span> <button>More </button></span>
-          <span> Cart</span>
+          <button type="button" class="btn btn-secondary">Login </button>
+          <button type="button" class="btn btn-warning">Become a Seller </button>
+          <button type="button" class="btn btn-info">More </button>
+          <button type="button" class="btn btn-success">Cart </button>
       </div>
+
+ 
       <div class ="row" >
           <div class = "col-sm-1" >
           <img className = "Top_Offers" src={Top_Offers1} alt = "Top_Offers" /> Top_Offers</div> 
@@ -56,6 +53,21 @@ const Homepage = () =>{
           <div class = "col-sm-1" >
             <img className = "Travel" src={Travel1} alt = "Travel" /> Travel </div>
       </div>
+      <div className="counting">
+            <span>{clicked}</span>
+            <button onClick={Multply}>  <div class = "col-sm-1" >
+            <img className = "Electronics" src={Electronics1} alt = "Electronics" /> Electronics</div></button>
+            <button onClick={Multply}> <div class = "col-sm-1" >
+            <img className = "Fashion" src={Fashion1} alt = "Fashion" /> Fashion</div></button>
+            <button onClick={Multply}> <div class = "col-sm-1" >
+            <img className = "Grocery" src={Grocery1} alt = "Grocery" /> Grocery</div></button>
+            <button onClick={Multply}> <div class = "col-sm-1" >
+            <img className = "Mobiles" src={Mobiles1} alt = "Mobiles" /> Mobiles</div> </button>
+            <button onClick={Multply}> <div class = "col-sm-1" >
+            <img className = "Travel" src={Travel1} alt = "Travel" /> Travel </div></button>
+            
+            <button onClick={devide}>-</button>
+        </div>
 
       <div>
         <h1>Hello this is Ravi</h1>
