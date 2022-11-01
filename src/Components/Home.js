@@ -61,7 +61,7 @@ const Homepage = () =>{
             <button onClick={Multply}>
               <img className = "Grocery" src={Grocery1} alt = "Grocery" /> Grocery</button>
             <button onClick={Multply}>
-              <img className = "Mobiles" src={Mobiles1} alt = "Mobiles" /> Mobiles </button>
+              <img className = "Mobiles" src={Mobiles1} alt = "Mobiles" /> Mobiles</button>
             <button onClick={Multply}> <img className = "Travel" src={Travel1} alt = "Travel" /> Travel</button>
             
             <button onClick={devide}>-</button>
