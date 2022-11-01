@@ -8,6 +8,7 @@ import { Navbar } from "./Components/Navbar";
 import Second from "./Components/Second"
 import First from "./Components/First";
 import Guest from "./Components/Guest";
+import Login from "./Components/Login";
 const App = () =>{
   return(
     <div>
@@ -19,6 +20,7 @@ const App = () =>{
         <Footer />
         <Navbar />
         <Guest/>
+        <Login/>
     </div>
   );
 }
