@@ -8,6 +8,8 @@ const Header = () => {
         <input type="text" placeholder="Username"/>
         <label>Password</label>
         <input type="password" placeholder="Password"/>
+        <label>Re-Password</label>
+        <input type="password" placeholder="Username"/>
         <input type="button" value="submit" />
       </form>
     </div>
