@@ -1,11 +1,16 @@
 import React from "react";
-import Image from '../Images/Flipkart-Logo.png'
 
-const Header = () =>{
-    return(
-        <div>
-            <img className="flipkart-logo" src={Image} alt="flipkart logo" />
-        </div>
-    )
-}
-export default Header
+const Header = () => {
+  return (
+    <div>
+      <form>
+        <label>User Name</label>
+        <input type="text" placeholder="Username"/>
+        <label>Password</label>
+        <input type="password" placeholder="Password"/>
+        <input type="button" value="submit" />
+      </form>
+    </div>
+  );
+};
+export default Header;
