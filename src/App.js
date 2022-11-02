@@ -12,6 +12,7 @@ import Guest from "./Components/Guest";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
 import Text from "./Components/Text";
+import Icon from "./Components/Icon";
 
 const App = () =>{
   return(
@@ -29,6 +30,7 @@ const App = () =>{
             <Route path="/header" element={ <Header />} />
             <Route path="/register" element={ <Register />} />
             <Route path="/text" element={ <Text />} />
+            <Route path="/icon" element={ <Icon />} />
           </Routes>
         </BrowserRouter>
     </div>
