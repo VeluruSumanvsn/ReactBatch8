@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom';
 import Top_Offers1 from "../Images/Top_Offers.webp";
 import Home1 from "../Images/Home.webp";
 import Wheelers2 from "../Images/2-Wheelers.webp";
@@ -20,6 +21,7 @@ const Homepage = () =>{
     }
   return (
     <div>
+      <Link to='/dashboard'>Dashboard</Link>
       <div class=" search-container bg-primary text-white d-flex flex-fill "> 
           <em><h3 >Flipkart</h3></em> 
           <em><span>Explore Plus</span></em>
@@ -67,12 +69,6 @@ const Homepage = () =>{
             <button onClick={devide}>-</button>
         </div>
 
-      <div>
-        <h1>Hello this is Ravi</h1>
-        <h2>This is modified by Ravi header2</h2>
-        <h3>This is modified by Ravi header3</h3>
-        <h4> This is Modified by ravi header4</h4>
-      </div>
     </div>
   );
 }
