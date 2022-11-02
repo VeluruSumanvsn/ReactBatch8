@@ -11,6 +11,7 @@ import ContactUS from "./Components/ContactUS";
 import Guest from "./Components/Guest";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
+import Text from "./Components/Text";
 
 const App = () =>{
   return(
@@ -27,6 +28,7 @@ const App = () =>{
             <Route path="/guest" element={ <Guest />} />
             <Route path="/header" element={ <Header />} />
             <Route path="/register" element={ <Register />} />
+            <Route path="/text" element={ <Text />} />
           </Routes>
         </BrowserRouter>
     </div>
