@@ -10,6 +10,7 @@ import AboutUS from "./Components/AboutUS"
 import ContactUS from "./Components/ContactUS";
 import Guest from "./Components/Guest";
 import Login from "./Components/Login";
+import Register from "./Components/Register";
 const App = () =>{
   return(
     <div>
@@ -24,6 +25,7 @@ const App = () =>{
             <Route path="/" element={ <Homepage />} />
             <Route path="/guest" element={ <Guest />} />
             <Route path="/header" element={ <Header />} />
+            <Route path="/register" element={ <Register />} />
           </Routes>
         </BrowserRouter>
     </div>
