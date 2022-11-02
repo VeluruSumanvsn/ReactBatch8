@@ -1,6 +1,6 @@
 import React from "react";
 
-class First extends React.Component {
+class ContactUS extends React.Component {
    constructor(){
     super();
     this.state={
@@ -21,8 +21,9 @@ class First extends React.Component {
    }
     render(){
         return(
-            <div className="counter">
-               <h2>example of counter by using setState</h2>
+            <div>
+               <h1>This is Contact us component</h1>
+               <h2>example of counter by using Class Based Component</h2>
                <h2>{this.state.value}</h2>
                <button onClick={this.Increment}>+</button>
                <button onClick={this.Decrement}>-</button>
@@ -30,4 +31,4 @@ class First extends React.Component {
         )
     }
 }
-export default First
+export default ContactUS

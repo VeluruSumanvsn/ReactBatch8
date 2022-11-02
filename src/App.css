@@ -10,3 +10,17 @@
     margin: 0 auto;
     padding: 15px;
 }
+.navbar{
+    width: 500px;
+    border: 1px solid royalblue;
+    color:rebeccapurple ;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+.counting{
+    width: 50 px;
+    border: 1px solid #111;
+    margin: 0 auto;
+    padding: 1px;
+}
