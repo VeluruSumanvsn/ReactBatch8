@@ -14,10 +14,16 @@ import Travel1 from "../Images/Travel.webp";
 const Homepage = () =>{
 
   const [data, setData] = useState([]);
+  const [data1, setData1] = useState([]);
   useEffect(() => {
     fetch("https://gorest.co.in/public/v2/users")
       .then((response) => response.json())
       .then((json) => setData(json));
+  })
+  useEffect(() => {
+    fetch("https://gorest.co.in/public/v2/todos")
+      .then((response) => response.json())
+      .then((json) => setData1(json));
   })
     const[clicked, setClicked] = useState(0);
     function Multply(){
@@ -93,6 +99,22 @@ const Homepage = () =>{
             <button onClick={devide}>-</button>
         </div>
 
+        <div>
+      {data1.length > 0 ? (
+        <div className="row m-0">
+          {data1.map((todos) => (
+            <div className="col-md-1 w-100">
+              <span> {todos.id} ,</span>
+              <span>{todos.user_id} ,</span>
+              <span>{todos.title} ,</span>
+              <span>{todos.due_on} ,</span>
+              <span>{todos.status} ,</span>
+            </div>
+          ))}
+        </div>
+      ) : (<div></div> )}
+
+    </div>
     </div>
   );
 }
