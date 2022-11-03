@@ -1,13 +1,11 @@
-import React from 'react'
-
+import React, { useContext } from "react";
+import { store } from "../App";
 const Navbar = () => {
-  return(
-    
+  const [data, setData] = useContext(store);
+  return (
     <div className="navbar">
-    <h2> Hello Surendra,This is Navbar Components</h2>
+      <h2>{data}</h2>
     </div>
-
-  )
-  
-}
-export default Navbar
+  );
+};
+export default Navbar;

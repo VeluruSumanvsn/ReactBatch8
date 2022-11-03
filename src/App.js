@@ -1,4 +1,4 @@
-import React from "react";
+import React,{createContext, useState} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from './Components/Home';
 import './App.css';
@@ -14,10 +14,13 @@ import Register from "./Components/Register";
 import Text from "./Components/Text";
 import Icon from "./Components/Icon";
 
+export const store = createContext();
 const App = () =>{
+  const [data, setData] = useState(123456);
   return(
     <div>
-        <BrowserRouter>
+      <store.Provider value={[data, setData]}>
+      <BrowserRouter>
           <Routes>
             <Route path="/dashboard" element={ <Dashboard />} />
             <Route path="/contact-us" element={ <ContactUS />} />
@@ -33,6 +36,8 @@ const App = () =>{
             <Route path="/icon" element={ <Icon />} />
           </Routes>
         </BrowserRouter>
+      </store.Provider>
+        
     </div>
   );
 }
