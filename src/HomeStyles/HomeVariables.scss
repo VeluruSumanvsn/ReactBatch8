@@ -1,0 +1,18 @@
+//Variables, Constant values, Mixings,Imports.
+$text-color : #0000ff;
+$bg-color : #ffff00;
+
+.todos{
+    color: $text-color;
+}
+
+@mixin textmixing {
+    color: #008000;
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid #0000ff; 
+}
+.due_on{
+
+    @include textmixing;
+}

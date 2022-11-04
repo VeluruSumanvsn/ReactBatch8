@@ -10,6 +10,9 @@ import Fashion1 from "../Images/Fashion.webp";
 import Grocery1 from "../Images/Grocery.webp";
 import Mobiles1 from "../Images/Mobiles.webp";
 import Travel1 from "../Images/Travel.webp";
+import "../HomeStyles/Home.css";
+import "../HomeStyles/HomeVariables.scss";
+
 
 const Homepage = () =>{
 
@@ -32,6 +35,11 @@ const Homepage = () =>{
     function devide(){
       setClicked((clicked+1) / 2)
     }
+    const compStyle = {
+      backgroundColor: "green",
+      fontSize : "12px"
+    }
+
   return (
     <div>
       <Link to='/dashboard'>Dashboard</Link>
@@ -85,7 +93,7 @@ const Homepage = () =>{
             <div className="col-md-1 w-100">
               <span> {albums.id} ,</span>
               <span>{albums.name} ,</span>
-              <span>{albums.email} ,</span>
+              <span className="email" style={compStyle} >{albums.email} ,</span>
               <span>{albums.gender} ,</span>
               <span>{albums.status} ,</span>
             </div>
@@ -107,8 +115,8 @@ const Homepage = () =>{
               <span> {todos.id} ,</span>
               <span>{todos.user_id} ,</span>
               <span>{todos.title} ,</span>
-              <span>{todos.due_on} ,</span>
-              <span>{todos.status} ,</span>
+              <span className="due_on" >{todos.due_on} ,</span>
+              <span className="email todos" style={compStyle}>{todos.status} ,</span>
             </div>
           ))}
         </div>
@@ -119,3 +127,7 @@ const Homepage = () =>{
   );
 }
 export default Homepage;
+
+
+
+
