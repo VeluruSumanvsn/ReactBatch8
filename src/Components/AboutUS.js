@@ -18,16 +18,14 @@ const AboutUS = () => {
       {data.length > 0 ? (
         <div className="row m-0">
           {data.map((item) => (
-            <div className="col-md-3">
+            <div className="col-md-4">
               <img src={item.thumbnailUrl} className="w-100"/>
               <div className="title hello" style={compStyle}>{item.title}</div>
               <div>{item.id}</div>
             </div>
           ))}
-        </div>
-      ) : (
-        <div></div>
-      )}
+        </div>) : (<div></div>
+)}
     </div>
   );
 };
