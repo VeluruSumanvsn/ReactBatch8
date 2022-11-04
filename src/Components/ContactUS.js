@@ -1,34 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
-class ContactUS extends React.Component {
-   constructor(){
-    super();
-    this.state={
-        value: 0
+const Todo = () =>{
+    const[task, setTask] = useState("");
+    const[todos, setTodos] = useState([]);
+
+    const changeHandler = (e) =>{
+        setTask(e.target.value)
     }
-    this.Increment = this.Increment.bind(this);
-    this.Decrement = this.Decrement.bind(this);
-   }
-   Increment(){
-    this.setState({
-        value: this.state.value + 1
-    })
-   }
-   Decrement(){
-    this.setState({
-        value: this.state.value -1
-    })
-   }
-    render(){
-        return(
-            <div>
-               <h1>This is Contact us component</h1>
-               <h2>example of counter by using Class Based Component</h2>
-               <h2>{this.state.value}</h2>
-               <button onClick={this.Increment}>+</button>
-               <button onClick={this.Decrement}>-</button>
-            </div>
-        )
+    const submitHandler = (e) =>{
+        e.preventDefault();
+        const newTodos = [...todos, task];
+        setTodos(newTodos);
+        setTask("");
     }
+    return(
+        <React.Fragment>
+            <form onSubmit={submitHandler} className="form">
+                <input type="text" onChange={changeHandler} value={task}/>
+                <input type="submit" value="Add"/>
+            </form>
+            <ul>
+                {todos.map((item, index) =>(
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+        </React.Fragment>
+    )
 }
-export default ContactUS
+export default Todo;
