@@ -13,7 +13,13 @@ import Login from "./Components/Login";
 import Register from "./Components/Register";
 import Text from "./Components/Text";
 import Icon from "./Components/Icon";
-import RwebLogin from "./Components/RWeb";
+// import RwebLogin from "./Components/RWeb";
+import RwebDB from "./Components/RWebjson";
+import RHome from "./Components/RHome";
+import ROrders from "./Components/ROrders";
+import RHeader from "./Components/RHeader";
+import RTable from "./Components/RTable";
+
 
 export const store = createContext();
 const App = () =>{
@@ -35,7 +41,12 @@ const App = () =>{
             <Route path="/register" element={ <Register />} />
             <Route path="/text" element={ <Text />} />
             <Route path="/icon" element={ <Icon />} />
-            <Route path="/r" element={ <RwebLogin />} />
+            {/* <Route path="/r" element={ <RwebLogin />} /> */}
+            <Route path="/db" element={ <RwebDB />} />
+            <Route path="/rh" element={ <RHome />} />
+            <Route path="/ro" element={ <ROrders />} />
+            <Route path="/rhd" element={ <RHeader />} />
+            <Route path="/rt" element={ <RTable />} />
           </Routes>
         </BrowserRouter>
       </store.Provider>
