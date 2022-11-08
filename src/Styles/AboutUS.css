@@ -1,3 +1,30 @@
-.title{
-    color: brown;
+.app{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.input-item{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+.button-item{
+  display: flex;
+  justify-content: center;
+}
+.form{
+  background-color: #fff;
+  padding: 10px;
+}
+.button-item .button{
+  background-color:lightseagreen;
+  border: 1px solid lightseagreen;
+  color: #fff;
+  padding: 5px 10px;
+}
+.error{
+  color: red;
 }
